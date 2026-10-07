@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnología e Inteligencia Artificial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>💻 Tecnología e Inteligencia Artificial</h1>
+        <p>Conociendo cómo la tecnología transforma nuestra educación y nuestra vida.</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#ia">¿Qué es la IA?</a>
+        <a href="#educacion">Educación</a>
+        <a href="#tecnologias">Tecnologías</a>
+        <a href="#cuestionario">Cuestionario</a>
+        <a href="#opinion">Opiniones</a>
+    </nav>
+
+    <main>
+
+        <section id="inicio">
+            <h2>Bienvenidos</h2>
+            <p>
+                La tecnología está presente en nuestra vida diaria.
+                La inteligencia artificial es una herramienta que permite
+                crear soluciones, aprender y realizar diferentes tareas.
+            </p>
+        </section>
+
+        <section id="ia">
+            <h2>🤖 ¿Qué es la Inteligencia Artificial?</h2>
+            <p>
+                La inteligencia artificial es una tecnología que permite
+                a los computadores realizar tareas que normalmente requieren
+                capacidades humanas, como aprender, analizar información
+                y reconocer patrones.
+            </p>
+        </section>
+
+        <section id="educacion">
+            <h2>📚 La IA en la educación</h2>
+            <p>
+                La inteligencia artificial puede ayudar a los estudiantes
+                a comprender temas, practicar conocimientos, organizar
+                información y encontrar nuevas formas de aprender.
+            </p>
+
+            <ul>
+                <li>Ayuda a buscar información.</li>
+                <li>Permite practicar diferentes temas.</li>
+                <li>Puede apoyar la creación de contenidos.</li>
+                <li>Facilita algunas tareas educativas.</li>
+            </ul>
+        </section>
+
+        <section id="tecnologias">
+            <h2>⚙️ Tecnologías actuales</h2>
+
+            <div class="tarjetas">
+
+                <div class="tarjeta">
+                    <h3>🤖 Inteligencia Artificial</h3>
+                    <p>
+                        Tecnología capaz de analizar información y realizar
+                        tareas de manera automatizada.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>🌐 Internet de las cosas</h3>
+                    <p>
+                        Permite conectar diferentes dispositivos a Internet
+                        para intercambiar información.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>🥽 Realidad Virtual</h3>
+                    <p>
+                        Crea experiencias digitales en las que el usuario
+                        puede interactuar con entornos virtuales.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>🦾 Robótica</h3>
+                    <p>
+                        Utiliza máquinas y sistemas programados para realizar
+                        diferentes actividades.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="cuestionario">
+            <h2>🧠 Cuestionario interactivo</h2>
+
+            <p><strong>¿Cuál de estas tecnologías puede generar textos e imágenes?</strong></p>
+
+            <button onclick="respuesta('correcta')">
+                Inteligencia Artificial
+            </button>
+
+            <button onclick="respuesta('incorrecta')">
+                Una regla
+            </button>
+
+            <button onclick="respuesta('incorrecta')">
+                Un cuaderno
+            </button>
+
+            <p id="resultado"></p>
+        </section>
+
+        <section id="opinion">
+            <h2>💬 Déjanos tu opinión</h2>
+
+            <p>
+                Escribe tu opinión sobre el sitio web y sobre el uso
+                de la tecnología en la educación.
+            </p>
+
+            <form onsubmit="enviarOpinion(event)">
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Tu nombre"
+                    required
+                >
+
+                <textarea
+                    id="comentario"
+                    placeholder="Escribe tu opinión..."
+                    required
+                ></textarea>
+
+                <button type="submit">Enviar opinión</button>
+            </form>
+
+            <p id="mensaje"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Proyecto escolar de Tecnología e Informática - 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html
