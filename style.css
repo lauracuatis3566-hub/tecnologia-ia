@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f6fa;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/* ENCABEZADO */
+header {
+    background: linear-gradient(135deg, #123c69, #1976a3);
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* MENÚ */
+nav {
+    background: #102a43;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #2aa7d6;
+}
+
+/* CONTENIDO */
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+section {
+    background: white;
+    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #145b82;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+/* LISTA */
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+/* TARJETAS */
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta {
+    background: #eef7fb;
+    padding: 22px;
+    border-radius: 12px;
+    border-left: 5px solid #1976a3;
+}
+
+.tarjeta h3 {
+    color: #145b82;
+    margin-bottom: 10px;
+}
+
+/* BOTONES */
+button {
+    background: #1976a3;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    margin: 6px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0d4f70;
+    transform: translateY(-2px);
+}
+
+/* RESULTADOS */
+#resultado {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* FORMULARIO */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 650px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #b8c4ce;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#mensaje {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background: #102a43;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    nav {
+        position: static;
+    }
+
+    section {
+        padding: 22px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
